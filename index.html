@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БерезаМебель</title>
+    <link rel="stylesheet" href="styles.css"> 
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .about, .gallery, .contact {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #333;
+        }
+        .gallery img {
+            width: calc(33% - 10px);
+            margin-right: 15px; 
+   margin-bottom :15px; 
+   height:auto; 
+   display:inline-block; 
+  }
+  .gallery img:last-child {margin-right :0;}
+  
+  form input[type="text"], form input[type="email"], form textarea {
+   width :100%; 
+   padding :10px; 
+   margin-bottom :10px; 
+   border-radius :5px; 
+   border :1 px solid #ccc ;
+  }
+  
+  form button{
+      background-color:#333 ;
+      color:white ;
+      border:none ;
+      padding :10 px ; 
+      cursor:pointer ; 
+      border-radius :5 px ;  
+     } 
+
+
+     .container {
+            width: 1140px;
+            max-width: 1440px;
+            margin: auto;
+            padding: 20px;
+        }
+        .achievements {
+            background-color: #f0f0f0;
+            padding: 50px 0;
+            margin-top: 50px;
+        }
+        .achievements h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .achievements .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .achievement-card {
+            width: calc(33% - 20px);
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+        .achievement-card:hover {
+            transform: translateY(-10px);
+        }
+        .achievement-card img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .achievement-card h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .achievement-card p {
+            font-size: 1rem;
+            color: #666;
+        }
+    
+        @media (max-width: 768px) {
+
+header {
+width: 1140px;
+}
+nav {
+width: 1140px;
+}
+
+
+.achievement-card {
+width: 100%;
+margin-bottom: 20px;
+}
+.achievements .cards {
+flex-direction: column;
+align-items: center;
+}
+}
+     
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>БерезаМебель</h1>
+</header>
+
+
+
+<div class="container">
+
+    <section id="about" class="about">
+        <h2>О нас</h2>
+        <p>БерезаМебель – это высококачественная мебель, индивидуальный подход и опыт работы на рынке более 10 лет. Мы создаем уникальные изделия для вашего дома и офиса.</p>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Галерея продукции</h2>
+        
+          
+          <img src="Gostinaya-Orta-interer-1024x576-1.webp" alt="Продукт 1">
+          <img src="kuhnya-s-portalom-13-1024x576.jpg" alt="Продукт 2">
+          <img src="Valensiya_Sen-Denis_white-1024x576.jpg" alt="Продукт 3">
+        
+      
+    
+      </section >
+
+
+      <div class="container">
+        <section id="achievements" class="achievements">
+            <h2>Наши достижения</h2>
+    
+            <div class="cards">
+                
+                <div class="achievement-card">
+                    <img src="award-icon.png" alt="Награда">
+                    <h3>Награды за дизайн</h3>
+                    <p>Мы получили несколько престижных наград за уникальный дизайн нашей мебели, включая премию за лучший дизайн на выставке 2023 года.</p>
+                </div>
+    
+               
+                <div class="achievement-card">
+                    <img src="clients-icon.png" alt="Клиенты">
+                    <h3>1000+ довольных клиентов</h3>
+                    <p>С момента основания более 1000 клиентов доверили нам создание мебели для их домов и офисов, и мы гордимся их доверием.</p>
+                </div>
+    
+                
+                <div class="achievement-card">
+                    <img src="sales-icon.png" alt="Продажи">
+                    <h3>Лидер продаж</h3>
+                    <p>На протяжении 10 лет мы занимаем лидирующие позиции на рынке мебели, что подтверждается нашей стабильной ростовой динамикой продаж.</p>
+                </div>
+    
+                
+                <div class="achievement-card">
+                    <img src="quality-icon.png" alt="Качество">
+                    <h3>Высокое качество</h3>
+                    <p>Все наши изделия проходят строгий контроль качества, что позволяет нам гарантировать долговечность и надежность нашей мебели.</p>
+                </div>
+    
+                
+                <div class="achievement-card">
+                    <img src="innovation-icon.png" alt="Инновации">
+                    <h3>Инновации в производстве</h3>
+                    <p>Мы внедряем новейшие технологии в производственные процессы, что позволяет создавать мебель, соответствующую современным требованиям.</p>
+                </div>
+    
+                
+                <div class="achievement-card">
+                    <img src="sustainability-icon.png" alt="Экологичность">
+                    <h3>Экологичность</h3>
+                    <p>Мы используем только экологически чистые материалы, заботясь о будущем нашей планеты и устойчивом развитии бизнеса.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+<section id =" contact "class =" contact ">
+<h2 > Контактная информация </h2 >
+<p > Телефон :(123)456-7890 </p >
+<p > Email :info@berezamebel.ru </p >
+
+<form action ="#" method ="post ">
+<input type ="text "name ="name "placeholder ="Ваше имя "required >
+<input type ="email "name ="email "placeholder ="Ваш email "required >
+<textarea name =message placeholder =Сообщение сообщение required ></textarea >
+<button type =submit > Отправить сообщение </button >
+</form >
+
+   </section >
+
+   </div >
+
+   </body >
+   </html >
