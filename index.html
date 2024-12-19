@@ -15,16 +15,28 @@
 </head>
 <body>
     
-
-<main>
-
-    <div class="container">
-        <div class="main-inner">
-            <h1>Мороз Мебель </h1>   
+    <main>
+        <div class="container">
+            <header>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="#products">Продукция</a></li>
+                        <li><a href="#mission">Миссия</a></li>
+                        <li><a href="#achievements">Достижения</a></li>
+                        <li><a href="#order">Заказать</a></li>
+                    </ul>
+                </nav>
+            </header>
+    
+            <div class="main-inner">
+                <h1>Мороз Мебель</h1>
+            </div>
         </div>
-    </div>
-
-</main>
+    </main>
+    
+    
+    
+ 
 
 <section class="catalog">
 
@@ -72,7 +84,7 @@
     </div>
     </section>
 
-    
+    <section id="products">
     <section>
                 <h2 class="catalog-title">Мы предлагаем</h2>
         
@@ -96,12 +108,12 @@
              
                 </div>
             </section>
-         
+        </section>
 
         
 
 
-
+        <section id="mission">
 <section class="mission">
 
     <div class="container">
@@ -113,6 +125,7 @@
 
     </div>
 
+</section>
 </section>
 
 <section class="mebel">
@@ -143,6 +156,7 @@
 
 
        
+    <section id="achievements">
 
         <section id="achievements" class="achievements">
             
@@ -194,7 +208,7 @@
                     </div>
                 </div>
             </section>
-
+        </section>
             
                 
     
@@ -205,7 +219,7 @@
 
 
 
-
+        <section id="order">
     <section>
 
         <div class="nothing-inner">
@@ -229,7 +243,7 @@
 
    
 </section>
-
+</section>
 
 
 <div class="contact-info" id="contactInfo">
@@ -282,6 +296,21 @@ window.addEventListener('scroll', function () {
         contactInfo.classList.remove('visible');
     }
 });
+
+
+//  Бургер меню Получаем элементы
+// Получаем элементы
+const burgerMenu = document.querySelector('.burger-menu');
+const navigation = document.querySelector('.navigation');
+
+// Добавляем обработчик клика
+burgerMenu.addEventListener('click', () => {
+    navigation.classList.toggle('active'); // Переключаем класс 'active', чтобы показывать/скрывать меню
+    burgerMenu.classList.toggle('open');   // Добавляем анимацию для бургер-меню
+});
+
+
+
 
 </script>
 
